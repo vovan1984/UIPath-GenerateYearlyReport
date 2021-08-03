@@ -1,6 +1,6 @@
 {
-  "name": "GenerateYearlyReportDispatcher",
-  "description": "Populate WI4 transactsions from System1 into Orchestrator queue for further processing by Performer robots.",
+  "name": "GenerateYearlyReportPerformer",
+  "description": "Generate yearly report for WI4 transactions.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
@@ -44,7 +44,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "afa257c0-1231-47e5-91e7-0ca5b0b805bd",
+      "uniqueId": "fa7debae-55be-4713-9022-da8a0333cc04",
       "input": [],
       "output": []
     }
