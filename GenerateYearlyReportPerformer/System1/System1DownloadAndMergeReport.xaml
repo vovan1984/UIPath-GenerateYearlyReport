@@ -165,7 +165,7 @@
         </Sequence>
       </ui:OnUiElementAppear.Body>
       <ui:OnUiElementAppear.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7bc32ec5-941a-4f76-827b-5117e4be9a2a" InformativeScreenshot="5687911809e6e667ff2e10f7a6a64a93" Selector="&lt;wnd app='firefox.exe' cls='MozillaWindowClass' title='ACME System 1 - Download Monthly Report — Mozilla Firefox' /&gt;&lt;uia automationid='nav-bar' name='Navigation' role='tool bar' /&gt;&lt;uia automationid='downloads-button' name='Downloads' role='button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7bc32ec5-941a-4f76-827b-5117e4be9a2a" InformativeScreenshot="5687911809e6e667ff2e10f7a6a64a93" Selector="&lt;wnd app='firefox.exe' cls='MozillaWindowClass' title='ACME System 1 - Download Monthly Report — Mozilla Firefox*' /&gt;&lt;uia automationid='nav-bar' name='Navigation' role='tool bar' /&gt;&lt;uia automationid='downloads-button' name='Downloads' role='button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>

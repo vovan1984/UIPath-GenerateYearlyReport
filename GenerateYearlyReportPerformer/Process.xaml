@@ -150,9 +150,9 @@
         <InArgument x:TypeArguments="x:String" x:Key="in_Year">
           <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;ReportYear&quot;).ToString" />
         </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="out_UploadId">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="uploadId" />
-        </InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_UploadId">
+          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="uploadId" />
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke System1NavigateToDasboard workflow" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="System1\System1NavigateToDasboard.xaml">

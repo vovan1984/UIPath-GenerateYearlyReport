@@ -3,12 +3,12 @@
     <x:Property Name="in_TaxId" Type="InArgument(x:String)" />
     <x:Property Name="in_ReportPath" Type="InArgument(x:String)" />
     <x:Property Name="in_Year" Type="InArgument(x:String)" />
-    <x:Property Name="out_UploadId" Type="InArgument(x:String)" />
+    <x:Property Name="out_UploadId" Type="OutArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>809.6,2112.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>809.6,2072.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1UploadYearlyReport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -71,7 +71,7 @@
       <AssemblyReference>System.Memory</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This sequence uploads yearly report to ACME System 1.&#xD;&#xA;&#xD;&#xA;Precondition: Reports-Upload Yearly Report page is opened.&#xD;&#xA;Postaction: Yearly report is uploaded to ACME System 1." DisplayName="System1UploadYearlyReport" sap:VirtualizedContainerService.HintSize="475.2,1948" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This sequence uploads yearly report to ACME System 1.&#xA;&#xA;Precondition: Reports-Upload Yearly Report page is opened.&#xA;Postaction: Yearly report is uploaded to ACME System 1." DisplayName="System1UploadYearlyReport" sap:VirtualizedContainerService.HintSize="475.2,1908" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="uploadConfirmation" />
     </Sequence.Variables>
@@ -81,13 +81,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser - Upload Yearly Report" sap:VirtualizedContainerService.HintSize="433.6,1546.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e6d313cadec9d47ce69f5304328b11e8" Selector="&lt;html app='firefox.exe' title='ACME System 1 - Upload Yearly Report' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser - Upload Yearly Report" sap:VirtualizedContainerService.HintSize="433.6,1506.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e6d313cadec9d47ce69f5304328b11e8" Selector="&lt;html app='firefox.exe' title='ACME System 1 - Upload Yearly Report' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1399.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1359.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -205,7 +205,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Upload Confirmation" sap:VirtualizedContainerService.HintSize="333.6,209.6" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Upload Confirmation" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                   <ActivityFunc.Argument>
